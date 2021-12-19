@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <!-- <input type="email" placeholder="Enter Email" id="email" />
+    <input type="text" placeholder="Enter password" id="password" />
+
+    <button onclick="signup()">Sign Up</button>
+    <button onclick="signin()">Sign In</button> -->
+    
+</body>
+
+<div id="login">
+    <h3 class="text-center text-white pt-5">Login form</h3>
+    <div class="container">
+        <div id="login-row" class="row justify-content-center align-items-center">
+            <div id="login-column" class="col-md-6">
+                <div id="login-box" class="col-md-12">
+                    <!-- <form id="login-form" class="form" action="" method="post"> -->
+                        <h3 class="text-center text-info">Login</h3>
+                        <div class="form-group">
+                            <label for="username" class="text-info">Username:</label><br>
+                            <input type="email" class="border" placeholder="Enter Email" id="email" />
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="text-info">Password:</label><br>
+                            <input type="text" class="border" placeholder="Enter password" id="password" />
+
+                        </div>
+                        <div class="form-group">
+                            <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+                            <button class="btn border btn-primary" onclick="signup()">Sign Up</button>
+                            <button class="btn border btn-primary" onclick="signin()">Sign In</button>
+                            <button class="btn border btn-primary" onclick="signinFB()">Sign in with Google</button>
+                        </div>
+                        <div id="register-link" class="text-right">
+                            <a href="#" class="text-info">Register here</a>
+                        </div>
+                    <!-- </form> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-database-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-auth-compat.js"></script>
+<script>
+    const firebaseConfig = {
+  apiKey: "AIzaSyDxhW5C8FJPkdEM92gfsA6TiFD8Bjy71Pg",
+  authDomain: "todolist-88be5.firebaseapp.com",
+  projectId: "todolist-88be5",
+  storageBucket: "todolist-88be5.appspot.com",
+  messagingSenderId: "810521861510",
+  appId: "1:810521861510:web:899807dd84bde01efae007"
+};
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    <script src="app.js"></script>
+</html>
